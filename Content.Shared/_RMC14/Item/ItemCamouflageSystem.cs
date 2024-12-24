@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
 using Robust.Shared.Containers;
@@ -30,10 +31,13 @@ public sealed class ItemCamouflageSystem : EntitySystem
         if (_items.Count == 0)
             return;
 
-        foreach (var ent in _items)
+        foreach (var ent in _items.ToList())
         {
             if (!TryComp(ent.Owner, out MetaDataComponent? meta))
+            {
+                _items.Dequeue();
                 continue;
+            }
 
             if (meta.LastModifiedTick == _time.CurTick)
                 continue;
@@ -100,7 +104,7 @@ public sealed class ItemCamouflageSystem : EntitySystem
             newEnt = SpawnNextToOrDrop(ent.Comp.CamouflageVariations[type], ent.Owner);
         }
 
-        var ev = new ItemCamouflageEvent(ent, newEnt);
+        var ev = new ItemCamouflageEvent(ent, newEnt, ent.Comp.OverrideStorageReplace);
         RaiseLocalEvent(ent, ref ev);
 
         QueueDel(ent.Owner);
@@ -108,6 +112,9 @@ public sealed class ItemCamouflageSystem : EntitySystem
 
     private void OnItemCamoflage(Entity<StorageComponent> ent, ref ItemCamouflageEvent args)
     {
+        if (args.ReplaceOverride)
+            return;
+
         var oldItem = args.Old;
         var newItem = args.New;
 

@@ -34,7 +34,7 @@
     - name: Jacket
       choices: { CMCoat: 1}
       entries:
-      - id: CMCoatOfficer
+      - id: RMCCoatServiceCamo
         recommended: true
     - name: Hat
       choices: { CMHat: 1 }
@@ -127,7 +127,7 @@
       - id: CMBeltMedicalFilled
       - id: RMCBeltHolsterSMGPouch
       #- id: CMBeltM82F # TODO RMC14 M82F Flare Gun Belt
-      - id: RMCM276ShotgunShellLoadingRig
+      - id: RMCBeltShotgunCamo
       - id: RMCBeltGrenade
     - name: Pouches
       choices: { CMPouches: 2 }
@@ -473,8 +473,8 @@
     - name: Commander's Primary
       choices: { CMProtagGun: 1 }
       entries:
-      - id: WeaponRifleM54CCamo # TODO RMC14 Port M46C Protag Gun
-        name: Commander's M54C
+      - id: WeaponRifleM59ACamo
+        name: M59A Prototype Rifle
         recommended: true # TODO RMC14 Make choices: colour the options brown
       - id: RMCSGOEquipmentCaseBeltCamo # TODO RMC14 Port M56C Smart Protag Gun
         name: Commander's Smartgun
@@ -1111,9 +1111,12 @@
       - CMCMO
       choices: { CMWeapon: 1 }
       entries:
-      - id: CMWeaponPistolM1984 # TODO BELT
-      - id: CMWeaponPistolMK80 # TODO BELT
-      - id: RMCWeaponRevolverM44 # TODO BELT
+      - id: RMCM1984BeltFilled
+        name: M1984 service pistol
+      - id: CMM77BeltFilled
+        name: M77 pistol
+      - id: RMCM44BeltFilled
+        name: M44 revolver
         recommended: true
     - name: Combat Equipment (Combat Use Only)
       jobs:
@@ -1137,7 +1140,7 @@
         name: first-aid pouch (pills)
       - id: RMCPouchFirstResponder
       - id: RMCPouchMedical
-      #- id: CMMedicalKitPouch
+      - id: RMCPouchMedkit
       - id: RMCPouchReagentCanisterBicaridine
         recommended: true
         name: Pressurized Reagent Canister Pouch\n(Bicaridine)
