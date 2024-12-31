@@ -13,7 +13,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-praetorian
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Praetorian/praetorian.rsi
+    sprite: _RMC14/Mobs/Xeno/Praetorian/praetorian.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -148,7 +148,7 @@
   suffix: Warden
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Praetorian/warden_praetorian.rsi
+    sprite: _RMC14/Mobs/Xeno/Praetorian/warden_praetorian.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -215,7 +215,7 @@
   suffix: Dancer
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Praetorian/dancer_praetorian.rsi
+    sprite: _RMC14/Mobs/Xeno/Praetorian/dancer_praetorian.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -251,7 +251,7 @@
   suffix: Vanguard
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Praetorian/vanguard_praetorian.rsi
+    sprite: _RMC14/Mobs/Xeno/Praetorian/vanguard_praetorian.rsi
   - type: MobThresholds
     thresholds:
       0: Alive

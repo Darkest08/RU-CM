@@ -9,7 +9,7 @@
     name: cm-job-name-xeno-parasite
     prob: 0.25
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
+    sprite: _RMC14/Mobs/Xeno/Parasite/parasite.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -74,7 +74,7 @@
   - type: Clothing
     quickEquip: false
     slots: [mask]
-    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite_mask.rsi
+    sprite: _RMC14/Mobs/Xeno/Parasite/parasite_mask.rsi
   - type: HideLayerClothing
     slots:
     - Snout

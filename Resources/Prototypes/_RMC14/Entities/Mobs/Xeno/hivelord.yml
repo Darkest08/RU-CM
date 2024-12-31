@@ -94,7 +94,7 @@
   id: CMXenoHivelord
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Hivelord/hivelord.rsi
+    sprite: _RMC14/Mobs/Xeno/Hivelord/hivelord.rsi
   - type: Xeno
     role: CMXenoHivelord
     actionIds:
@@ -135,7 +135,7 @@
   suffix: Resin Whisperer
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Hivelord/resin_whisperer_hivelord.rsi
+    sprite: _RMC14/Mobs/Xeno/Hivelord/resin_whisperer_hivelord.rsi
   - type: Xeno
     role: CMXenoHivelord
     actionIds:
