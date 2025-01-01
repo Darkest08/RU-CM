@@ -114,6 +114,7 @@
     - JumpsuitMarine
     - CMHandsBlackMarine
     - CMBootsBlackFilled
+    - RMCGlassesM4SPRBattleSight
 
 - type: entity
   parent: CMVendorBundleRiflemanApparel
