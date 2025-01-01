@@ -74,11 +74,7 @@
   - type: Clothing
     quickEquip: false
     slots: [mask]
-<<<<<<< HEAD
     sprite: _RMC14/Mobs/Xeno/Parasite/parasite_mask.rsi
-=======
-    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
->>>>>>> c5254f5bedc411e3dd303db08bc49d3101459033
   - type: HideLayerClothing
     slots:
     - Snout

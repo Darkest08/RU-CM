@@ -186,10 +186,7 @@
   suffix: Healer
   components:
   - type: Sprite
-<<<<<<< HEAD
     sprite: _RMC14/Mobs/Xeno/Drone/healer_drone.rsi
-=======
-    sprite: _RMC14/Mobs/Xenonids/Drone/healer_drone.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
@@ -197,7 +194,6 @@
       visible: false
     - map: [ "enum.RMCDamageVisualLayers.Base" ]
       visible: false
->>>>>>> c5254f5bedc411e3dd303db08bc49d3101459033
   - type: RMCXenoDamageVisuals
     prefix: drone
   - type: Xeno

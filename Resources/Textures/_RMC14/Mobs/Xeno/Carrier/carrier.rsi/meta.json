@@ -14,6 +14,13 @@
       "name": "crit"
     },
     {
+        "name": "sleeping"
+    },
+    {
+        "name": "alive",
+        "directions": 4
+    },
+    {
       "name": "para_0",
       "directions": 4
     },
@@ -52,13 +59,6 @@
     },
     {
       "name": "para_rest_3"
-    },
-    {
-      "name": "sleeping"
-    },
-    {
-      "name": "alive",
-      "directions": 4
     },
     {
       "name": "carrier_downed_0"
