@@ -55,8 +55,6 @@ discord = "https://discord.gg/SaXwaSfQsu"
 
 [net]
 tickrate = 25
-port = 1212
-bindto = "95.31.33.71:1212"
 
 [physics]
 grid_splitting = false
